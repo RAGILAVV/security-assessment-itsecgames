@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Fri Sep 12 02:29:19 2025 as: /usr/lib/nmap/nmap --privileged --script vuln -oA vuln_scan itsecgames.com
+Nmap scan report for itsecgames.com (31.3.96.40)
+Host is up (0.061s latency).
+rDNS record for 31.3.96.40: web.mmebvba.com
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+443/tcp open  https
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+# Nmap done at Fri Sep 12 02:35:04 2025 -- 1 IP address (1 host up) scanned in 344.73 seconds
